@@ -5,5 +5,5 @@ cnt=$(ls -l /data/corefile/ | wc -l)
 if [ $cnt -ne 1 ] ; then
     # alarm content
     let coredump=$cnt-1
-    cagent_tools alarm "119.29.247.44 find $coredump coredump file! "
+    cagent_tools alarm "find $coredump coredump file! "
 fi
